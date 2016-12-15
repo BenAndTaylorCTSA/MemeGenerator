@@ -1,4 +1,5 @@
-package test;
+package PointsEx;
+
 
 import java.awt.Color;
 import java.awt.EventQueue;
@@ -9,6 +10,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.util.Random;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.Timer;
@@ -104,3 +106,4 @@ public class PointsEx extends JFrame {
         });
     }
 }
+
