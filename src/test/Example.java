@@ -11,7 +11,7 @@ class Surface extends JPanel { //Text is drawn in Surface which inherits JPannel
     private void doDrawing(Graphics g) {//Void function takes in g from Old graphics class
 
         Graphics2D g2d = (Graphics2D) g; //Extends the old Graphics class into the newer more advanced
-        g2d.drawString("Hello World", 50, 50);//Draws string on the panel with the draw string method
+        g2d.drawString("Hello World!", 50, 50);//Draws string on the panel with the draw string method
     }
 
     @Override //paint component is overridden to allow super.paintCompnent to be called
