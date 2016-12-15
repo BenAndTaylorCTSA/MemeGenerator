@@ -47,7 +47,7 @@ class Surface extends JPanel implements ActionListener {
 
         Random r = new Random();
 
-        for (int i = 0; i < 3000; i++) {
+        for (int i = 0; i < 3500; i++) {
 
             int x = Math.abs(r.nextInt()) % w;
             int y = Math.abs(r.nextInt()) % h;
