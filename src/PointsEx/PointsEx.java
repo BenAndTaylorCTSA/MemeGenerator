@@ -39,16 +39,22 @@ class Surface extends JPanel implements ActionListener {
     private void doDrawing(Graphics g) {
 
         Graphics2D g2d = (Graphics2D) g;
+        Random randomGenerator = new Random();
 
-        g2d.setPaint(Color.blue);
 
         int w = getWidth();
         int h = getHeight();
 
         Random r = new Random();
 
-        for (int i = 0; i < 3500; i++) {
-
+        for (int i = 0; i < 10000; i++) {
+            int randomInt = randomGenerator.nextInt(100);
+            if (randomInt > 50) {
+            	g2d.setPaint(Color.blue);
+            }
+        	if (randomInt < 50) {
+        		g2d.setPaint(Color.red);
+        	}
             int x = Math.abs(r.nextInt()) % w;
             int y = Math.abs(r.nextInt()) % h;
             g2d.drawLine(x, y, x, y);
