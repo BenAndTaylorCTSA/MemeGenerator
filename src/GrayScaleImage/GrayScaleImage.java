@@ -12,7 +12,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 
 class Surface extends JPanel {
-
+//H
     private Image mshi;
     private BufferedImage bufimg;
     private Dimension d;
