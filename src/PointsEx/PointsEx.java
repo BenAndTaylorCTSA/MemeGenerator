@@ -55,7 +55,7 @@ class Surface extends JPanel implements ActionListener {
         	if (randomInt < 34 || randomInt >= 66) {
         		g2d.setPaint(Color.green);
         	}
-        	if (randomInt < 65) {
+        	if (randomInt < 67) {
         		g2d.setPaint(Color.red);
         	}
         	
