@@ -47,16 +47,16 @@ class Surface extends JPanel implements ActionListener {
 
         Random r = new Random();
 
-        for (int i = 0; i < 100000; i++) {
+        for (int i = 0; i < 50000; i++) {
             int randomInt = randomGenerator.nextInt(100);
             if (randomInt >= 33) {
             	g2d.setPaint(Color.blue);
             }
         	if (randomInt < 34 || randomInt >= 66) {
-        		g2d.setPaint(Color.red);
+        		g2d.setPaint(Color.green);
         	}
         	if (randomInt < 65) {
-        		g2d.setPaint(Color.green);
+        		g2d.setPaint(Color.red);
         	}
         	
             int x = Math.abs(r.nextInt()) % w;
@@ -66,7 +66,7 @@ class Surface extends JPanel implements ActionListener {
     }
 
     @Override
-    public void paintComponent(Graphics g) {
+    public void paintComponent(Graphics g) { 
 
         super.paintComponent(g);
         doDrawing(g);
